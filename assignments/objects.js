@@ -18,19 +18,41 @@ const example = {
 }
 
 // Write your intern objects here:
-const interns = [
-  {"id": 1 , "name": "Mitzi", "email":"mmelloy0@psu.edu", "gender": "F"},
-  {"id": 2, "name": "Kennan", "email":"kdiben1@tinypic.com", "gender": "M"},
-  {"id": 3, "name": "Keven", "email":"kmummery2@wikimedia.org", "gender": "M"},
-  {"id": 4, "name": "Gannie", "email":"gmartinson3@illinois.edu", "gender": "M"},
-  {"id": 5, "name": "Antonietta", "email":"adaine5@samsung.com", "gender": "F"}
-]
+const mitzi = {
+    "id": 1 ,
+    "name": "Mitzi", 
+    "email":"mmelloy0@psu.edu", 
+    "gender": "F"
+}
 
- const mitzi = interns[0];
-const kennan = interns[1];
-const keven = interns[2];
-const gannie = interns[3];
-const antonietta = interns[4];
+const kennan = {
+    "id": 2, 
+    "name": "Kennan", 
+    "email":"kdiben1@tinypic.com",
+    "gender": "M"
+}
+
+const keven = {
+    "id": 3, 
+    "name": "Keven", 
+    "email":"kmummery2@wikimedia.org",
+    "gender": "M"
+}
+
+const gannie = {
+    "id": 4,
+    "name": "Gannie", 
+    "email":"gmartinson3@illinois.edu", 
+    "gender": "M"
+}
+
+const antonietta = {
+    "id": 5, 
+    "name": "Antonietta", 
+    "email":"adaine5@samsung.com",
+    "gender": "F"
+}
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
@@ -73,16 +95,19 @@ console.log(antonietta.multiplyNums(3,4));
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
 const parent = {
-    "name": "Cindy",
-  "age": "50", 
-  "child": {
-    "name": "Germaine",
-    "age": "22",
+    "name": "Susan",
+  "age": "70",
+    
+  "child":{
+    "name": "George",
+    "age": "50",
+      
     "grandchild":{
         "name": "Sam",
-        "age" : "3",
+        "age" : "30",
     }
-}}
+}
+}
 
 // Log the parent object's name
 
@@ -94,12 +119,12 @@ console.log(parent.child.age);
 
 // Log the name and age of the grandchild
 
-console.log(parent.child.grandchild.age, parent.child.grandchild.name)
+console.log(parent.child.grandchild.name, parent.child.grandchild.age);
 
 // Have the parent speak
 
 parent.speak = function(){
-  return "Hello there, my child!"
+  return "Hello there, my child!";
 }
 console.log(parent.speak());
 
@@ -107,7 +132,7 @@ console.log(parent.speak());
 // Have the child speak
 
 parent.child.speak = function(){
-   return "Hello mom, hello dad, hello children!"
+   return "Hello mom, hello dad, hello children!";
 }
 
  console.log(parent.child.speak());
@@ -115,7 +140,7 @@ parent.child.speak = function(){
 // Have the grandchild speak
 
 parent.child.grandchild.speak = function(){
-  return "Hello, Gah Gah"
+  return "Hello grandma, hello father!";
 }
 
  console.log(parent.child.grandchild.speak());
