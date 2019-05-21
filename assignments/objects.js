@@ -72,7 +72,7 @@ console.log(antonietta.gender);
 // console.log(kennan.speak());
 
 kennan.speak = function(){
-  return "Hello, my name is Kennan!";
+  return `Hello, my name is ${kennan.name}!`;
 }
 console.log(kennan.speak());
 
